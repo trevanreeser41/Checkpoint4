@@ -1,0 +1,27 @@
+﻿@model BlowOut.Models.Instrument
+@{
+    ViewBag.Title = "Saxophone";
+}
+
+<div class="center">
+    <h1>Saxophone</h1>
+    <br />
+    <h2>New $42/mo. | Used $30/mo.</h2>
+    <br />
+    @Html.DropDownListFor(model => model.Price, new[] {
+    new SelectListItem()
+    {Text = "New $42/mo.", Value = bool.TrueString},
+    new SelectListItem()
+    {Text = "Used $30/mo.", Value = bool.FalseString} }, "Choose a rental option")
+    <br />
+    <br />
+    <br />
+    <div class="form-group">
+        <input type="submit" value="Rent" class="btn btn-default" />
+    </div>
+    <br />
+    <img src="~/Content/Saxophone.png" width="500" />
+</div>
+<div class="container">
+    <h3 class="w3-text-black"><strong>NOTE:</strong> After possessing an instrument for 18 months you now <strong>OWN</strong> the instrument. If the instrument is returned within the <strong>first 3 months</strong>, there will be a <strong>$200 non-refundable restocking fee</strong>. If returned after 3 months, you forfeit any equity in the instrument.</h3>
+</div>

@@ -1,0 +1,152 @@
+﻿@model BlowOut.Models.Instrument
+
+@{
+    ViewBag.Title = "Index";
+}
+<link href="~/Content/w3styles.css" rel="stylesheet" />
+<br />
+<h2><strong>INSTRUMENT RENTALS</strong></h2>
+<div class="container">
+    <h3 class="w3-text-black"><strong>NOTE:</strong> After possessing an instrument for 18 months you now <strong>OWN</strong> the instrument. If the instrument is returned within the <strong>first 3 months</strong>, there will be a <strong>$200 non-refundable restocking fee</strong>. If returned after 3 months, you forfeit any equity in the instrument.</h3>
+</div>
+<div class="row">
+    <div class="column">
+        <a href="@Url.Action("Create", "Home", new {id = 1})">       
+
+        <div class="imgcontainer">
+        <img src="~/Content/Clarinet.png" class="img-thumbnail w3-hover-greyscale button2" />
+        <div class="text-block w3-hover-greyscale button2">
+        <h2>Clarinet</h2>
+        <p><strong>NEW</strong> $35/mo.</p>
+        </div>
+        </div>
+        </a>
+        <a href="@Url.Action("Create", "Home", new {id = 3})">
+
+            <div class="imgcontainer">
+                <img src="~/Content/Saxophone.png" class="img-thumbnail w3-hover-greyscale button2">
+                <div class="text-block w3-hover-greyscale button2">
+                    <h2>Saxophone</h2>
+                    <p><strong>NEW</strong> $42/mo.</p>
+                    
+                </div>
+            </div>
+        </a>
+        <a href="@Url.Action("Create", "Home", new {id = 5})">
+
+            <div class="imgcontainer">
+                <img src="~/Content/Trombone.png" class="img-thumbnail w3-hover-greyscale button2">
+                <div class="text-block w3-hover-greyscale button2">
+                    <h2>Trombone</h2>
+                    <p><strong>NEW</strong> $60/mo.</p>
+                    
+                </div>
+            </div>
+        </a>
+        <a href="@Url.Action("Create", "Home", new {id = 7})">
+
+            <div class="imgcontainer">
+                <img src="~/Content/Tuba.png" class="img-thumbnail w3-hover-greyscale button2">
+                <div class="text-block w3-hover-greyscale button2">
+                    <h2>Tuba</h2>
+                    <p><strong>NEW</strong> $70/mo.</p>
+                    
+                </div>
+            </div>
+        </a>
+        <a href="@Url.Action("Create", "Home", new {id = 9})">
+
+            <div class="imgcontainer">
+                <img src="~/Content/Flute.png" class="img-thumbnail w3-hover-greyscale button2">
+                <div class="text-block w3-hover-greyscale button2">
+                    <h2>Flute</h2>
+                    <p><strong>NEW</strong> $40/mo.</p>
+                   
+                </div>
+            </div>
+        </a>
+        <a href="@Url.Action("Create", "Home", new {id = 11})">
+
+            <div class="imgcontainer">
+                <img src="~/Content/Trumpet.png" class="img-thumbnail w3-hover-greyscale button2">
+                <div class="text-block w3-hover-greyscale button2">
+                    <h2>Trumpet</h2>
+                    <p><strong>NEW</strong> $55/mo.</p>
+                    
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="column">
+        <a href="@Url.Action("Create", "Home", new {id = 2})">
+
+            <div class="imgcontainer">
+                <img src="~/Content/Clarinet.png" class="img-thumbnail w3-hover-greyscale button2" />
+                <div class="text-block w3-hover-greyscale button2">
+                    <h2>Clarinet</h2>
+                    <p><strong>USED</strong> $27/mo.</p>
+                    
+                </div>
+            </div>
+        </a>
+        <a href="@Url.Action("Create", "Home", new {id = 4})">
+
+            <div class="imgcontainer">
+                <img src="~/Content/Saxophone.png" class="img-thumbnail w3-hover-greyscale button2">
+                <div class="text-block w3-hover-greyscale button2">
+                    <h2>Saxophone</h2>
+                    <p><strong>USED</strong> $30/mo.</p>
+                    
+                </div>
+            </div>
+        </a>
+        <a href="@Url.Action("Create", "Home", new {id = 6})">
+
+            <div class="imgcontainer">
+                <img src="~/Content/Trombone.png" class="img-thumbnail w3-hover-greyscale button2">
+                <div class="text-block w3-hover-greyscale button2">
+                    <h2>Trombone</h2>
+                    <p><strong>USED</strong> $35/mo.</p>
+
+                </div>
+            </div>
+        </a>
+        <a href="@Url.Action("Create", "Home", new {id = 8})">
+
+            <div class="imgcontainer">
+                <img src="~/Content/Tuba.png" class="img-thumbnail w3-hover-greyscale button2">
+                <div class="text-block w3-hover-greyscale button2">
+                    <h2>Tuba</h2>
+                    <p><strong>USED</strong> $50/mo.</p>
+
+                </div>
+            </div>
+        </a>
+        <a href="@Url.Action("Create", "Home", new {id = 10})">
+
+            <div class="imgcontainer">
+                <img src="~/Content/Flute.png" class="img-thumbnail w3-hover-greyscale button2">
+                <div class="text-block w3-hover-greyscale button2">
+                    <h2>Flute</h2>
+                    <p><strong>USED</strong> $25/mo.</p>
+                    
+                </div>
+            </div>
+        </a>
+        <a href="@Url.Action("Create", "Home", new {id = 12})">
+
+            <div class="imgcontainer">
+                <img src="~/Content/Trumpet.png" class="img-thumbnail w3-hover-greyscale button2">
+                <div class="text-block w3-hover-greyscale button2">
+                    <h2>Trumpet</h2>
+                    <p><strong>USED</strong>$25/mo.</p>
+                    
+                </div>
+            </div>
+        </a>
+    </div>
+    </div>
+
+
+
+

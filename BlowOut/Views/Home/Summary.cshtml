@@ -1,0 +1,81 @@
+﻿<link href="~/Content/w3styles.css" rel="stylesheet" />
+
+@{
+    ViewBag.Title = "Summary";
+}
+
+<h1>Thank you for choosing BlowOut for your rental, @ViewBag.Client.FirstName!</h1>
+<h3 class="w3-right-align">
+    @Html.ActionLink("New Rental", "Index", "Rental")
+</h3>
+<h2>Order Summary:</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            Order ID:
+        </th>
+        <th>
+            First Name:
+        </th>
+        <th>
+            Last Name:
+        </th>
+        <th>
+            Phone:
+        </th>
+        <th>
+            Email:
+        </th>
+        <th>
+            Instrument:
+        </th>
+        <th>
+            Condition:
+        </th>
+        <th>
+            Price:
+        </th>
+        <th>
+            18 Month Purchase Price:
+        </th>
+        <th></th>
+    </tr>
+
+    <tr>
+        <td>
+            @ViewBag.Client.ClientID
+        </td>
+        <td>
+            @ViewBag.Client.FirstName
+        </td>
+        <td>
+            @ViewBag.Client.LastName
+        </td>
+        <td>
+            @ViewBag.Client.Phone
+        </td>
+        <td>
+            @ViewBag.Client.Email
+        </td>
+        <td>
+            @ViewBag.Instrument.Description
+        </td>
+        <td>
+            @ViewBag.Instrument.Type
+        </td>
+        <td>
+            $@ViewBag.Instrument.Price
+        </td>
+        <td>
+            $@ViewBag.Annual
+        </td>
+    </tr>
+</table>
+    <div>
+        <img src="~/Content/@ViewBag.Instrument.Image" />
+    </div>
+
+
+
+

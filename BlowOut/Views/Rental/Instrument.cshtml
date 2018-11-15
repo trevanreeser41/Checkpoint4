@@ -1,0 +1,15 @@
+﻿@model BlowOut.Models.Instrument
+
+@{
+    ViewBag.Title = "Instrument";
+}
+
+<h2>Instrument:</h2>
+
+<div class="container">
+    <u><h1>@Model.InstrumentName</h1></u>
+    <h2>@Model.Price</h2>
+    
+    @Model.InstrumentImage
+</div>
+
